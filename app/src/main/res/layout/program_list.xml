@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="vertical" 
+    android:focusable="false"
+    android:background="#ffffff">
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal" >
+
+   <RelativeLayout
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent">
+
+ <ImageView
+     android:id="@+id/im"
+     android:layout_width="25dp"
+     android:layout_height="60dp"
+     android:layout_alignParentRight="true"
+     android:src="@drawable/angleright" />
+
+ <ImageView
+     android:id="@+id/imageView1"
+     android:layout_width="100dp"
+     android:layout_height="wrap_content"
+     android:layout_alignParentLeft="true"
+     android:layout_alignParentTop="true"
+      />
+
+<TextView
+    android:id="@+id/textView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_toRightOf="@+id/imageView1"
+    android:layout_marginLeft="10dp"
+    android:text="TextView"
+    android:textSize="15dp"
+    android:fontFamily="sans-serif"/>
+
+ </RelativeLayout>
+ </LinearLayout>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="20dp"
+    android:orientation="horizontal" >
+   
+    <RelativeLayout
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent">
+    <TextView
+    android:id="@+id/price"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentTop="true"
+    android:textStyle="bold"
+    android:textSize="15dp" />
+
+    
+   
+    </RelativeLayout>
+    
+    </LinearLayout>
+</LinearLayout>

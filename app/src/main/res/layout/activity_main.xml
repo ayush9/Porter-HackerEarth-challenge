@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+  
+    tools:context=".MainActivity" >
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#1E90FF"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="PORTER"
+            android:textColor="#000"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_height="30dp"
+        android:layout_width="wrap_content">
+    <TextView android:id="@+id/apihits"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="API Hits:"
+        android:fontFamily="sans-serif"
+        android:textColor="#000000"
+        android:textSize="20dp"/>
+<TextView android:id="@+id/str"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_toRightOf="@+id/apihits"
+    android:textColor="#000000"
+    android:textSize="20dp"/>
+</RelativeLayout>
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </ListView>
+
+</LinearLayout>
